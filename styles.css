@@ -1,0 +1,86 @@
+body {
+    background-color: #FE7E21;
+}
+
+/*PERFIL DE USUARIO*/
+.usuario-wiki{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 700px 50px 700px;
+    padding: 10px 15px;
+    border-radius: 200px 200px 200px 200px;
+    border: 2px solid black;
+
+    background-color: rgb(170, 138, 89);
+    color: #fff;
+
+}
+.usuario-foto {
+    width: 65px;
+    height: 50px;
+}
+
+/*LOGO DE LA PAGINA*/
+
+.contenedor-valve-wiki{
+    width: 500px;
+    height: 7px;
+	margin: auto;
+	padding: 75px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+    background-color: none;
+}
+.contenedor-valve-wiki h1{
+    border: 5px solid  black;
+    padding: 10px;
+    color: black ;
+}
+
+/*NAVEGADOR*/ * navegador
+.contenedor-nav{
+    background-color: blue;
+    margin: auto;
+    width: 900px;
+}
+
+.contenedor-nav ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav li{
+    list-style: none;
+}
+.nav li a{
+    background-color: 434343;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav li a:hover{
+    background-color: gold;
+}
+
+.nav > li{
+    float: left;
+}
+/*SUBMENU*/
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
