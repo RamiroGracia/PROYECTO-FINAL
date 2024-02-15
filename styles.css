@@ -25,20 +25,23 @@ body {
 
 .contenedor-valve-wiki{
     width: 500px;
-    height: 7px;
+    height: 17px;
 	margin: auto;
 	padding: 75px 0;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-    background-color: none;
+    justify-content:center;
+    align-items: center;
 }
+
+#valve_logo {
+    width: 300px;
+    height: 300px;
+}
+
 .contenedor-valve-wiki h1{
-    border: 5px solid  black;
     padding: 10px;
     color: black ;
+    display: inline-flex;
 }
 
 /*NAVEGADOR*/ * navegador
@@ -50,7 +53,6 @@ body {
 
 .contenedor-nav ul {
     padding: 0px;
-    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,15 +62,17 @@ body {
     list-style: none;
 }
 .nav li a{
-    background-color: 434343;
+    background-color:  rgb(52, 63, 33);
     color: #fff;
     text-decoration: none;
+    border-radius: 10%;
     padding: 10px 15px;
+    margin: 10px;
     display: block;
 }
 
-.nav li a:hover{
-    background-color: gold;
+.nav li a:hover {
+    background-color: 434343 ;
 }
 
 .nav > li{
@@ -83,4 +87,62 @@ body {
 
 .nav li:hover > ul {
     display: block;
+}
+
+.nav li:hover > ul li a {
+    background-color: rgb(177, 163, 85);
+}
+
+.nav li ul li a:hover {
+    background-color: 434343 ;
+}
+
+/*PRESENTACION DEL CREADOR*/
+#presentacion-del-creador{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#presentacion-wiki {
+    text-align: center;
+    border-radius: 30px;
+    width: 600px;
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: rgb(227, 183, 122);
+}
+
+#que-es {
+    width: 400px;
+    margin: auto;
+}
+
+#foto-creador{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 5px solid red;
+}
+
+/*CONTACTOS*/
+.contenedor-red-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.contenedor-red-social a img{
+    align-content: center;
+    display: inline-block;
+    margin: 20px;
+}
+.configuracion-foto-red-social{
+    width: 50px;
+    height: 50px;
+}
+
+#facebook-img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 25px;
 }
