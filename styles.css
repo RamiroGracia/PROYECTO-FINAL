@@ -7,16 +7,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 700px 5px 700px;
     padding: 10px 15px;
     border-radius: 151px 151px 151px 151px;
     border: 2px solid black;
     background-color: rgb(170, 138, 89);
     color: #fff;
-
+    flex-wrap: wrap;
+    align-content:center;
+    width:4%; 
+    margin: 0 auto; 
 }
 .usuario-foto {
-    width: 65px;
+    width: 50px;
     height: 50px;
 }
 
@@ -49,7 +51,6 @@ body {
 
 /*NAVEGADOR*/ * navegador
 .contenedor-nav{
-    background-color: blue;
     margin: auto;
     width: 900px;
 }
@@ -63,6 +64,7 @@ body {
 
 .nav li{
     list-style: none;
+    min-width: 5%;
 }
 .nav li a{
     background-color:  rgb(52, 63, 33);
@@ -70,7 +72,7 @@ body {
     text-decoration: none;
     border-radius: 10%;
     padding: 10px 15px;
-    margin: 10px;
+    margin: 5px;
     display: block;
 }
 
@@ -99,6 +101,11 @@ body {
 .nav li ul li a:hover {
     background-color: 434343 ;
 }
+
+/*BOTONES*/
+
+
+
 
 /*PRESENTACION DEL CREADOR*/
 #presentacion-del-creador{
@@ -139,6 +146,12 @@ body {
     display: inline-block;
     margin: 20px;
 }
+
+.contenedor-red-social a img:hover{
+    filter: blur(2px);
+    transform: translateY(-3px)scale(1.05)
+}
+
 .configuracion-foto-red-social{
     width: 50px;
     height: 50px;
