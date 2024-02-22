@@ -1,8 +1,16 @@
-body {
+/*FONDOS DE PANTALLA DE LA WEB*/
+#pagina-principal {
     background-image: url(./img/XZKK-qZz_400x400.png);
     background-repeat: no-repeat;
     background-size:cover;
-    min-width: 50%;
+    
+}
+
+#inicio-registro{
+    background-image: url(./img/VALVE/logo_valve/Whats-it-like-working-on-Steam-Secrets-of-the-platform.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
 }
 
 /*PERFIL DE USUARIO*/
@@ -50,11 +58,98 @@ body {
 
 .contenedor-valve-wiki h1{
     padding: 10px;
-    color: hsla(0, 0%, 100%, 0.61) ;
+    color: rgb(180, 180, 180) ;
     display: inline-flex;
+    font-size: 30px;
 }
 
-/*NAVEGADOR*/ * 
+/*FORMULARIO DE INICIO Y REGISTRO*/
+
+.contenedor-sesion-registro{
+    background-color: rgb(233, 123, 123);
+    height:500px ;
+    width: 700px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    box-shadow: 0px 0px 70px 0px black ;
+    border-radius: 10%;
+}
+
+.contenedor-sesion-registro h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contenedor-sesion-registro form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+* 
+/*modificaciones al ingreso de datos*/
+.ingreso-dato-registro-inicio {
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.ingreso-dato-registro-inicio input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.ingreso-dato-registro-inicio label {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    color: rgb(241, 170, 170);
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+/*animacion del usuario y contraseña*/
+.ingreso-dato-registro-inicio span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    color: red;
+}
+
+.ingreso-dato-registro-inicio input:focus ~  label ,
+.ingreso-dato-registro-inicio input:focus  ~  label {
+    top: -5px;
+    color: red;
+}
+
+.ingreso-dato-registro-inicio  ~  span::before ,
+.ingreso-dato-registro-inicio  ~  span::before {
+    width: 100%;
+}
+
+.olvido{
+    text-decoration: none;
+}
+/*parte final de iniciar o registra*/
+
+
+
+.recordar-registro-inicio{
+    text-align: center;
+}
+
+
+
+/*NAVEGADOR*/ 
 .contenedor-nav{
     margin: auto;
 }
@@ -146,7 +241,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 .contenedor-red-social a img{
     align-content: center;

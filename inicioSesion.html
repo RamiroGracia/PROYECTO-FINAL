@@ -2,31 +2,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>INICIO DE SECION</title>
 </head>
-<body>
-    <header>
-    <h1>VALVE WIKI</h1>
-    </header>
+<body id="inicio-registro">
     <section>
-        <form action="">
-            <fieldset>
-                <article>
-                    <h3>Nombre de usuario</h3>
+        <div class="contenedor-sesion-registro">
+            <form method="post">
+                <div class="contenedor-valve-wiki">
+                    <img src="./img/VALVE/logo_valve/Valve_Software-logo-D342097650-seeklogo.com.png" alt="logo valve" id="valve_logo">
+                    <h1 id="a">WIKI</h1>
+                </div>
+                <h1>INICIO DE SESION</h1>
+                <div class="nombre-usuario ingreso-dato-registro-inicio">
                     <input type="text">
-                    <h3>Contraseña</h3>
+                    <label for="">Nombre de usuario</label>
+                </div>
+                <div class="contraseña ingreso-dato-registro-inicio">
                     <input type="password">
-                </article>
-            </fieldset>
-            <input type="submit">
-        </form>
-        <p>¿No tenes cuenta? , registrarte aca</p>
-        <input type="button" value="REGISTRARSE">
+                    <label for="">Contraseña</label>
+                </div>    
+                <p><a href="" class="olvido">¿Te olvidaste de tu contraseña?</a></p>
+                <div>
+                    <input type="submit" value="iniciar">
+                </div>
+            </form>
+            <div class="recordar-registro-inicio"> 
+                <p>¿No tenes cuenta? , <a href="">registrarte aca</a></p>
+            </div>
+        </div>  
     </section>
-    <footer> <!--CONTACTOS-->
-        <img src="./img/redes_sociales/gmail_email-logo.webp" alt="email">
-        <img src="./img/redes_sociales/youtube-logo.png" alt="youtube">
-        <img src="./img/redes_sociales/fecebook-logo.png" alt="fecebook"> 
-    </footer>
 </body>
 </html>
